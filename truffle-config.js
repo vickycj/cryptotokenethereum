@@ -64,13 +64,13 @@ module.exports = {
       skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
     live: {
-      provider: function() { 
-       return new HDWalletProvider(mnemonic, "https://mainnet.infura.io/v3/YOUR-PROJECT-ID");
+      provider: function () {
+        return new HDWalletProvider(mnemonic, "https://mainnet.infura.io/v3/YOUR-PROJECT-ID");
       },
       network_id: 1,
       gas: 7500000,
       gasPrice: 10000000000,
-  }
+    }
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
